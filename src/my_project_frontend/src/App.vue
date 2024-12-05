@@ -47,6 +47,16 @@ getBlogs()
       </div>
       <button type="submit">Click to add!</button>
     </form>
-    {{ blogs }}
+    <div>
+      <div v-for="blog in blogs">
+        <h3>{{ blog.title }}</h3>
+        <p>{{ blog.content }}</p>
+        <div>
+
+          {{ blog.date }}
+          {{ blog.tags }}
+        </div>
+      </div>
+    </div>
   </main>
 </template>
